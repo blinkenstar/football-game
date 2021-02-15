@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+
+    <style>
+        body {
+            background-color: #404040;
+        }
+
+        .result-panel {
+            width: 580px;
+            margin: 15px auto;
+            text-align: center;
+            font-family: sans-serif;
+            background-color: #262626;
+            border: 2px solid #9f9fa3;
+            border-radius: 5px;
+            padding: 4px;
+            color: white;
+
+        }
+
+        .info {
+            width: 110px;
+            display: inline-block;
+        }
+
+        #score-user {
+            font-size: 3rem;
+            color: yellow;
+        }
+
+        #versus {
+            font-size: 3rem;
+        }
+
+        #score-comp {
+            font-size: 3rem;
+            color: yellow;
+        }
+
+        canvas {
+            padding: 0;
+            margin: auto;
+            display: block;
+            width: 600px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="result-panel">
+        <div class="info">PLAYER</div>
+        <div class="info" id="score-user">0</div>
+        <div class="info" id="versus">:</div>
+        <div class="info" id="score-comp">0</div>
+        <div class="info">COMPUTER</div>
+    </div>
+
+    <canvas id="game" width="600" height="400"></canvas>
+        
+    <script src="game.js"></script>
+    
+</body>
+</html>
